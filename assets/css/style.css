@@ -12,3 +12,37 @@
 body {
   margin: 0;
 }
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+/* End Container */
+
+/* Top Header */
+.top-header {
+  background-color: var(--color-main);
+  padding: 10px 0;
+}
+
+.top-header .inner-wrap {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+
+.top-header .inner-item {
+  color: #FFFBEB;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-header .inner-item i {
+  font-size: 20px;
+}
+/* End Top Header */
