@@ -2,6 +2,7 @@
 
 :root {
   --color-main: #4502C7;
+  --color-text: #25282B;
 }
 
 * {
@@ -11,6 +12,10 @@
 
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Container */
@@ -77,3 +82,126 @@ body {
   }
 }
 /* End Top Header */
+
+/* Header */
+.header {
+  background-color: white;
+  padding: 12px 0;
+}
+
+.header .inner-wrap {
+  display: flex;
+  align-items: center;
+  gap: 128px;
+}
+
+.header .inner-image {
+  width: 218px;
+  aspect-ratio: 218/50;
+}
+
+.header .inner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header ul {
+  list-style: none; /* Removes bullet points */
+  margin: 0;        /* Removes default top/bottom spacing */
+  padding: 0;       /* Removes default left indentation */
+}
+
+.header .inner-menu {
+  flex: 1;
+}
+
+.header .inner-menu > ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header .inner-menu > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.header .inner-menu > ul > li > a {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.header .inner-menu > ul > li > a.active, .header .inner-menu > ul > li > a:hover {
+  color: var(--color-main);
+}
+
+.header .inner-menu > ul > li > i {
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.header .inner-menu > ul > li:hover > i::before {
+  content:  "\f0d8";
+}
+
+.header .inner-menu > ul > li  > ul {
+  position: absolute;
+  width: 280px;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 8px 0;
+  display: none;
+}
+
+.header .inner-menu > ul > li:hover  > ul {
+  display: block;
+}
+
+.header .inner-menu > ul > li  > ul > li > a {
+  color: var(--color-main);
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  padding: 8px 22px;
+}
+
+.header .inner-menu > ul > li  > ul > li > a.active, .header .inner-menu > ul > li  > ul > li > a:hover {
+  background-color: var(--color-main);
+  color: white;
+}
+
+.header .inner-cart {
+  width: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.header .inner-cart .inner-cart-logo {
+  width: 28px;
+  height: auto;
+}
+
+.header .inner-cart .inner-triagle-logo {
+  margin-right: -0.5px;
+}
+
+.header .inner-cart .inner-number {
+  width: 15px;
+  aspect-ratio: 1/1;
+  background-color: #FF3904;
+  font-weight: 400;
+  font-size: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+/* End Header */
