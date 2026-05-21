@@ -316,4 +316,36 @@ button, input {
   gap: 10px;
   cursor: pointer;
 }
+
+@media (max-width: 992px) {
+  .section-1 .inner-form {
+    padding: 25px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-1 .inner-form {
+    grid-template-columns: 1fr
+  }
+
+  .section-1 .inner-location {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-1 .inner-title {
+    font-size: 27px;
+  }
+
+  .section-1 .inner-desc {
+    font-size: 14px;
+  }
+
+  .section-1 .inner-form {
+    padding: 15px;
+    gap: 12px;
+  }
+}
 /* End Section 1 */
