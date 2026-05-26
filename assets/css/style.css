@@ -12,6 +12,7 @@
 
 body {
   margin: 0;
+  background-color: #F8F8F8;
 }
 
 a {
@@ -349,3 +350,224 @@ button, input {
   }
 }
 /* End Section 1 */
+
+/* Section 2 */
+.section-2 {
+  padding: 60px 0;
+}
+
+.section-2 .inner-wrap {
+  background-color: var(--color-main);
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 10px;
+  padding: 32px 23px;
+  display: grid;
+  grid-template-columns: 244fr 856fr;
+  gap: 32px;
+}
+
+.section-2 .inner-info {
+  text-align: center;
+  color: white;
+}
+
+.section-2 .inner-info .inner-text-1 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section-2 .inner-info .inner-text-2 {
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 36px;
+}
+
+.section-2 .inner-info .inner-text-3 {
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 17px;
+}
+
+.section-2 .inner-info .inner-clock-lists {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 47px;
+}
+
+.section-2 .inner-info .inner-clock-item {
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-main);
+}
+
+.section-2 .inner-info .inner-clock-item .inner-number {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.section-2 .inner-info .inner-clock-item .inner-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section-2 .inner-info .inner-text-4 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.section-2 .inner-info .inner-text-5 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #FFD63A;
+}
+
+.section-2 .inner-info .inner-text-5 span {
+  text-decoration: underline;
+}
+
+.section-2 .inner-lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+/* End Section 2 */
+
+/* Product Item */
+.product-item {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2.38px 2.38px 0px #00000040;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-item .inner-image {
+  width: 271px;
+  aspect-ratio: 271 / 237;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-item .inner-discount {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px 4px 5px;
+  background-color: #DA0808;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  font-weight: 600;
+  font-size: 11px;
+  color: #F9F9FA;
+  text-transform: uppercase;
+  position: relative;
+  top: -17px;
+}
+
+.product-item .inner-discount img {
+  height: 12px;
+  width: auto;
+}
+
+.product-item .inner-content {
+  padding: 0px 14px 16px 16px;
+}
+
+.product-item .inner-content .inner-title {
+  height: 36px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #25282B;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Số dòng tối đa muốn hiển thị */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-item .inner-content .inner-prices {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 10px;
+}
+
+.product-item .inner-content .inner-prices span {
+  text-decoration: underline;
+}
+
+.product-item .inner-content .inner-old-price {
+  font-weight: 600;
+  font-size: 15px;
+  color: #52575C;
+  text-decoration: line-through;
+}
+
+.product-item .inner-content .inner-new-price {
+  font-weight: 700;
+  font-size: 14px;
+  color: #DA0808;
+}
+
+.product-item .inner-content .inner-desc {
+  font-weight: 400;
+  font-size: 11px;
+  color: #8C8C8C;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.product-item .inner-content .inner-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-item .inner-content .inner-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.product-item .inner-content .inner-rating .inner-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.product-item .inner-content .inner-rating .inner-number {
+  font-weight: 400;
+  font-size: 11px;
+  color: #8C8C8C;
+}
+
+.product-item .inner-content .inner-stock {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.product-item .inner-content .inner-stock .inner-label {
+  font-weight: 700;
+  font-size: 11px;
+  color: #25282B;
+}
+
+.product-item .inner-content .inner-stock .inner-number {
+  padding: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  background-color: #DA0808;
+  border-radius: 6px;
+}
+/* End Product Item */
