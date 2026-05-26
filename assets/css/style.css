@@ -678,6 +678,29 @@ button, input {
 .section-4 .inner-button {
   text-align: center;
 }
+
+@media (max-width: 992px) {
+  .section-4 .inner-wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-4 .inner-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .section-4 {
+    padding: 45px 0;
+  }
+  
+  .section-4 .inner-wrap {
+    margin-bottom: 25px;
+    gap: 10px;
+  }
+}
 /* End Section 4 */
 
 /* Button Outline */
@@ -693,5 +716,13 @@ button, input {
   color: var(--color-main);
   background-color: white;
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .button-outline {
+    max-width: 125px;
+    height: 42px;
+    font-size: 14px
+  }
 }
 /* End Button Outline */
